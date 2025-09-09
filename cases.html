@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>민원 사례집</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="js/cases.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>민원 사례집</h1>
+      <p class="tagline"><a class="btn" href="index.html">← 홈으로</a></p>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">검색</h2>
+      <input
+        id="search"
+        class="input"
+        type="search"
+        placeholder="키워드 입력: 예) 도로, 공사, 침하, 하자"
+        aria-label="사례 검색"
+      />
+
+      <ul id="casesList" class="list" aria-live="polite">
+        <!-- JS가 항목을 채웁니다 -->
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <small>자주 묻는 민원 정리(샘플)</small>
+    </footer>
+  </body>
+</html>
