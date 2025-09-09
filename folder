@@ -1,0 +1,11 @@
+ai-map-site/
+├─ index.html            # 홈(첫 페이지)
+├─ cases.html            # A안: 민원 사례집
+├─ map.html              # C안: 지도 앱
+├─ assets/
+│  └─ styles.css         # 공통 스타일
+├─ js/
+│  ├─ cases.js           # 사례집 전용 스크립트
+│  └─ map.js             # 지도 전용 스크립트
+└─ data/
+   └─ areas.geojson      # 지반침하 위험 구역(예시 데이터)
