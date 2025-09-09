@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>지반침하 지도</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- Leaflet CDN: 설치 불필요, 인터넷 연결 필요 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>지반침하 위험구역 지도</h1>
+      <p class="tagline"><a class="btn" href="index.html">← 홈으로</a></p>
+    </header>
+
+    <main class="container">
+      <label for="areaSelect" class="section-title">지역 선택</label>
+      <select id="areaSelect" class="input" aria-label="지역 선택"></select>
+
+      <div
+        id="map"
+        style="
+          height: 60vh;
+          margin-top: 12px;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid #1f2937;
+        "
+      ></div>
+    </main>
+
+    <footer class="site-footer"><small>데이터: 예시(가상)</small></footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script defer src="js/map.js"></script>
+  </body>
+</html>
