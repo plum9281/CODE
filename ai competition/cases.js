@@ -46,3 +46,12 @@ function filter(keyword) {
 
 render(CASES);
 searchEl.addEventListener("input", (e) => render(filter(e.target.value)));
+searchEl.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const query = e.target.value.trim();
+    if (query) {
+      const url = `cases.pdf#search=${encodeURIComponent(query)}`;
+      window.open(url, "_blank");
+    }
+  }
+});
